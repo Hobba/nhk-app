@@ -1,0 +1,18 @@
+import React from 'react';
+import logo from './nerdhalbkugel-logo.png';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Hier entsteht die neue Nerdhalkbugel Website / App.
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
