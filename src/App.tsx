@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './nerdhalbkugel-logo.png';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
