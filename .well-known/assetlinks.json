@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "de.nerdhalbkugel.pwa",
+        "sha256_cert_fingerprints": ["35:B9:9B:FB:CE:FE:7C:E9:82:1D:11:CD:D7:C3:12:19:ED:10:35:A8:DF:C7:00:33:DB:75:4C:D5:E7:9B:61:BD"]
+      }
+    }]
