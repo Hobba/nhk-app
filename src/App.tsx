@@ -10,7 +10,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <p>
-                    Hier entsteht die neue Nerdhalbkugel Website.
+                    Hier entsteht die neue Nerdhalbkugel Website!
                 </p>
                 <img src={logo} className="App-logo"/>
                 <div>
