@@ -3,6 +3,6 @@
       "target": {
         "namespace": "android_app",
         "package_name": "de.nerdhalbkugel.twa",
-        "sha256_cert_fingerprints": ["DF:B0:A7:70:C4:20:50:55:08:DB:26:CA:9F:FD:7C:31:51:21:75:89:BD:CA:92:E8:F1:13:8D:1F:A5:4D:0B:2B"]
+        "sha256_cert_fingerprints": ["07:5C:99:0A:46:DE:AE:0F:B9:94:E6:00:84:D4:67:00:56:CC:EE:8D:6A:A6:92:BF:55:BE:FA:79:08:BB:F1:EF"]
       }
     }]
