@@ -5,16 +5,14 @@ import '../../App.css'
 
 const Home = () => {
     return (
-        <div>
-            <body className="body">
-            <div className="greeting">
-                <h2>
-                    Herzlich Willkommen auf der Nerdhalbkugel
-                </h2>
-            </div>
-            <img src={logo} className="home-logo"/>
-            </body>
+        <body className="body">
+        <div className="greeting">
+            <h2>
+                Herzlich Willkommen auf der Nerdhalbkugel
+            </h2>
         </div>
+        <img src={logo} className="home-logo"/>
+        </body>
     );
 };
 
