@@ -34,6 +34,11 @@ export default function FixedBottomNavigation() {
                             color: '#e1ce1b',
                         },
                     },
+                    label: {
+                        fontFamily: 'monospace',
+                        fontWeight: 600,
+                        marginTop: '5px'
+                    }
                 },
             },
         },
@@ -73,6 +78,7 @@ export default function FixedBottomNavigation() {
                         }}
                         sx={{
                             backgroundColor: '#50139d',
+                            height: 70,
                         }}>
                         <BottomNavigationAction label="Start" icon={<HomeIcon/>}/>
                         <BottomNavigationAction label="Über Uns" icon={<Diversity1/>}/>
