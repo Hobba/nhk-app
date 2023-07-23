@@ -68,7 +68,7 @@ export default function FixedBottomNavigation() {
             <CssBaseline/>
             <ThemeProvider theme={theme}>
                 <Paper
-                    sx={{position: 'fixed', bottom: 0, left: 0, right: 0}}
+                    sx={{position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 100}}
                     elevation={3}>
                     <BottomNavigation
                         showLabels
@@ -78,7 +78,7 @@ export default function FixedBottomNavigation() {
                         }}
                         sx={{
                             backgroundColor: '#50139d',
-                            height: 70,
+                            height: 75,
                         }}>
                         <BottomNavigationAction label="Start" icon={<HomeIcon/>}/>
                         <BottomNavigationAction label="Über Uns" icon={<Diversity1/>}/>
