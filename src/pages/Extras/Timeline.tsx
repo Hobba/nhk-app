@@ -6,74 +6,151 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
+import MovieIcon from '@mui/icons-material/MovieFilter';
+import SeriesIcon from '@mui/icons-material/PlaylistPlay';
+import OneShotIcon from '@mui/icons-material/Camera';
 import Typography from '@mui/material/Typography';
-import {Box, Paper} from '@mui/material';
+import {Box, Card, createTheme, Paper, ThemeProvider} from '@mui/material';
+import {timelineOppositeContentClasses} from "@mui/lab";
 
 export default function CustomizedTimeline() {
+
+    const theme = createTheme({
+        palette: {
+            primary: {
+                main: '#50139d',
+            },
+            secondary: {
+                main: '#e1ce1b'
+            },
+            text : {
+                primary: '#ffffff'
+            }
+        },
+    });
+
     return (
-        <Box sx={{justifyContent: "center", flexWrap: "nowrap"}}>
-            <Paper elevation={5} sx={{opacity: 0.8}}>
-                <Timeline position="right">
-                    <TimelineItem>
-                        <TimelineOppositeContent sx={{m: 'auto 0'}} align="right" variant="h6" color="text.primary">
-                            1942 - 1945
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineConnector/>
-                            <TimelineDot color="primary">
-                                <LaptopMacIcon/>
-                            </TimelineDot>
-                            <TimelineConnector/>
-                        </TimelineSeparator>
-                        <TimelineContent sx={{py: '12px', px: 2}}>
-                            <Typography variant="h6" component="span">
-                                Captain America: The First Avenger
-                            </Typography>
-                            <Typography>NHK Folge 25 & 32</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent sx={{m: 'auto 0'}} align="right" variant="h6" color="text.primary">
-                            1944
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineConnector/>
-                            <TimelineDot color="primary">
-                                <LaptopMacIcon/>
-                            </TimelineDot>
-                            <TimelineConnector/>
-                        </TimelineSeparator>
-                        <TimelineContent sx={{py: '12px', px: 2}}>
-                            <Typography variant="h6" component="span">
-                                Agent Carter („One-Shot“)
-                            </Typography>
-                            <Typography>NHK Folge 32</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent sx={{m: 'auto 0'}} align="right" variant="h6" color="text.primary">
-                            1946
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineConnector/>
-                            <TimelineDot color="primary">
-                                <LaptopMacIcon/>
-                            </TimelineDot>
-                            <TimelineConnector/>
-                        </TimelineSeparator>
-                        <TimelineContent sx={{py: '12px', px: 2}}>
-                            <Typography variant="h6" component="span">
-                                Marvel’s Agent Carter (Staffel 1)
-                            </Typography>
-                            <Typography>NHK Folge 32</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                </Timeline>
-            </Paper>
-        </Box>
+        <ThemeProvider theme={theme}>
+
+            <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 1}}>
+                <Paper elevation={5} sx={{justifyContent: "center", opacity: 0.7, backgroundColor: 'black'}}>
+                    <Timeline
+                        sx={{
+                            [`& .${timelineOppositeContentClasses.root}`]: {
+                                flex: 0.2,
+                            },
+                        }}>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{opacity: 1.0, m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                1942 - 1945
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="primary">
+                                    <MovieIcon/>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2, fontWeight: 'bold'}}>
+                                <Typography variant="h6" component="span" color="white">
+                                    Captain America: The First Avenger
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 25 & 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                1944
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="primary">
+                                    <OneShotIcon/>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2, fontWeight: 'bold'}}>
+                                <Typography variant="h6" component="span">
+                                    Agent Carter („One-Shot“)
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                1946
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="primary">
+                                    <SeriesIcon/>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2, fontWeight: 'bold'}}>
+                                <Typography variant="h6" component="span">
+                                    Marvel’s Agent Carter (Staffel 1)
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                1947
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="primary">
+                                    <SeriesIcon/>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Marvel’s Agent Carter (Staffel 2)
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                1995
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="primary">
+                                    <MovieIcon/>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Captain Marvel
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 28 & 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2010
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="primary">
+                                    <MovieIcon/>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Iron Man
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                    </Timeline>
+                 </Paper>
+            </Box>
+        </ThemeProvider>
     );
 }
