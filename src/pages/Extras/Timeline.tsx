@@ -48,8 +48,7 @@ export default function CustomizedTimeline() {
                                 1942 - 1945
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="primary">
+                                <TimelineDot color="warning">
                                     <Icon>
                                         <img src={MovieIcon} height={25} width={25}/>
                                     </Icon>
@@ -69,7 +68,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="primary">
+                                <TimelineDot color="secondary">
                                     <Icon>
                                         <img src={OneShotIcon} height={25} width={25}/>
                                     </Icon>
@@ -109,7 +108,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="warning">
+                                <TimelineDot color="primary">
                                     <Icon>
                                         <img src={SeriesIcon} height={25} width={25}/>
                                     </Icon>
@@ -129,7 +128,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="secondary">
+                                <TimelineDot color="warning">
                                     <Icon>
                                         <img src={MovieIcon} height={25} width={25}/>
                                     </Icon>
@@ -149,7 +148,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot variant='outlined'>
+                                <TimelineDot color="warning">
                                     <Icon>
                                         <img src={MovieIcon} height={25} width={25}/>
                                     </Icon>
@@ -161,6 +160,206 @@ export default function CustomizedTimeline() {
                                     Iron Man
                                 </Typography>
                                 <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2011
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="warning">
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Der unglaubliche Hulk
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2011
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="warning">
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Iron Man 2
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2010
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="secondary">
+                                    <Icon>
+                                        <img src={OneShotIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    The Consultant
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2011
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="secondary">
+                                    <Icon>
+                                        <img src={OneShotIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    A Funny Thing Happened on the Way to Thor’s Hammer
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2011
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="warning">
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Thor
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2012
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="warning">
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Marvel's The Avengers
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2012
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector/>
+                                <TimelineDot color="primary" variant="outlined">
+                                    <Icon>
+                                        <img src={SeriesIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Loki
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold"></Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2012
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector/>
+                                <TimelineDot color="secondary">
+                                    <Icon>
+                                        <img src={OneShotIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Item 47
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 32</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2012
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                                <TimelineDot color="warning">
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    Iron Man 3
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 41</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
+                                2013
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineConnector/>
+                                <TimelineDot color="secondary">
+                                    <Icon>
+                                        <img src={OneShotIcon} height={25} width={25}/>
+                                    </Icon>
+                                </TimelineDot>
+                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+                            </TimelineSeparator>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <Typography variant="h6" component="span">
+                                    All Hail the King
+                                </Typography>
+                                <Typography color="secondary.main" fontWeight="bold">NHK Folge 41</Typography>
                             </TimelineContent>
                         </TimelineItem>
                     </Timeline>
