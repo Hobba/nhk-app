@@ -6,11 +6,11 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import MovieIcon from '@mui/icons-material/MovieFilter';
-import SeriesIcon from '@mui/icons-material/PlaylistPlay';
-import OneShotIcon from '@mui/icons-material/Camera';
+import MovieIcon from '../../components/Icons/Logo_Film.png';
+import SeriesIcon from '../../components/Icons/Logo_Serie.png'
+import OneShotIcon from '../../components/Icons/Logo_OneShot.png'
 import Typography from '@mui/material/Typography';
-import {Box, Card, createTheme, Paper, ThemeProvider} from '@mui/material';
+import {Box, Card, createTheme, Icon, Paper, ThemeProvider} from '@mui/material';
 import {timelineOppositeContentClasses} from "@mui/lab";
 
 export default function CustomizedTimeline() {
@@ -47,7 +47,9 @@ export default function CustomizedTimeline() {
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                                 <TimelineDot color="primary">
-                                    <MovieIcon/>
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
                                 </TimelineDot>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                             </TimelineSeparator>
@@ -65,7 +67,9 @@ export default function CustomizedTimeline() {
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                                 <TimelineDot color="primary">
-                                    <OneShotIcon/>
+                                    <Icon>
+                                        <img src={OneShotIcon} height={25} width={25}/>
+                                    </Icon>
                                 </TimelineDot>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                             </TimelineSeparator>
@@ -83,7 +87,9 @@ export default function CustomizedTimeline() {
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                                 <TimelineDot color="primary">
-                                    <SeriesIcon/>
+                                    <Icon>
+                                        <img src={SeriesIcon} height={25} width={25}/>
+                                    </Icon>
                                 </TimelineDot>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                             </TimelineSeparator>
@@ -101,7 +107,9 @@ export default function CustomizedTimeline() {
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                                 <TimelineDot color="primary">
-                                    <SeriesIcon/>
+                                    <Icon>
+                                        <img src={SeriesIcon} height={25} width={25}/>
+                                    </Icon>
                                 </TimelineDot>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                             </TimelineSeparator>
@@ -119,7 +127,9 @@ export default function CustomizedTimeline() {
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                                 <TimelineDot color="primary">
-                                    <MovieIcon/>
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
                                 </TimelineDot>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                             </TimelineSeparator>
@@ -137,7 +147,9 @@ export default function CustomizedTimeline() {
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                                 <TimelineDot color="primary">
-                                    <MovieIcon/>
+                                    <Icon>
+                                        <img src={MovieIcon} height={25} width={25}/>
+                                    </Icon>
                                 </TimelineDot>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
                             </TimelineSeparator>
