@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
 
     return (
         <ThemeProvider theme={theme}>
-            <AppBar position="sticky" color="primary">
+            <AppBar position="fixed" style={{ background: 'rgba(80, 19, 157, 0.7)', boxShadow: 'none'}}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <img

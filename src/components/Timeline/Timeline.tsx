@@ -6,9 +6,9 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import MovieIcon from '../../components/Icons/Logo_Film.png';
-import SeriesIcon from '../../components/Icons/Logo_Serie.png'
-import OneShotIcon from '../../components/Icons/Logo_OneShot.png'
+import MovieIcon from '../Icons/Logo_Film.png';
+import SeriesIcon from '../Icons/Logo_Serie.png'
+import OneShotIcon from '../Icons/Logo_OneShot.png'
 import Typography from '@mui/material/Typography';
 import {Box, createTheme, Icon, Paper, ThemeProvider} from '@mui/material';
 import {timelineOppositeContentClasses} from "@mui/lab";

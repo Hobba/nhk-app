@@ -5,12 +5,14 @@ import ResponsiveAppBar from "./components/AppBar/ResponsiveAppBar";
 
 
 function App() {
-  return (
-      <>
-        <ResponsiveAppBar />
-        <FixedBottomNavigation />
-      </>
-  );
+    return (
+        <main>
+            <div>
+                <ResponsiveAppBar/>
+                <FixedBottomNavigation/>
+            </div>
+        </main>
+    );
 }
 
 export default App;

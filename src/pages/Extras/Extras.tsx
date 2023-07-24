@@ -1,14 +1,14 @@
 import React from 'react';
-import CustomizedTimeline from "./Timeline";
+import CustomizedTimeline from "../../components/Timeline/Timeline";
 
 const Extras = () => {
     return (
-        <body className="body">
-        <div className="placeholder-text">
-            <h2>Marvel Cinematic Universe Timeline</h2>
-            <CustomizedTimeline />
+        <div className="page">
+            <div className="placeholder-text">
+                <h2 className="headline2">Marvel Cinematic Universe Timeline</h2>
+                <CustomizedTimeline/>
+            </div>
         </div>
-        </body>
     );
 };
 

@@ -37,7 +37,8 @@ export default function FixedBottomNavigation() {
                     label: {
                         fontFamily: 'monospace',
                         fontWeight: 600,
-                        marginTop: '5px'
+                        marginTop: '5px',
+                        whiteSpace: 'nowrap',
                     }
                 },
             },
@@ -68,7 +69,7 @@ export default function FixedBottomNavigation() {
             <CssBaseline/>
             <ThemeProvider theme={theme}>
                 <Paper
-                    sx={{position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 100}}
+                    sx={{position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(80, 19, 157, 0.7)'}}
                     elevation={3}>
                     <BottomNavigation
                         showLabels
@@ -77,8 +78,15 @@ export default function FixedBottomNavigation() {
                             setValue(newValue);
                         }}
                         sx={{
-                            backgroundColor: '#50139d',
+                            position: 'absolute',
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            // backgroundColor: '#50139d',
                             height: 75,
+                            background: 'rgba(80, 19, 157, 0.7)',
+                            //background: 'transparent',
+                            boxShadow: 'none'
                         }}>
                         <BottomNavigationAction label="Start" icon={<HomeIcon/>}/>
                         <BottomNavigationAction label="Über Uns" icon={<Diversity1/>}/>
