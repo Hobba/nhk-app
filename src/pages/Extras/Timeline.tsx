@@ -23,8 +23,11 @@ export default function CustomizedTimeline() {
             secondary: {
                 main: '#e1ce1b'
             },
+            warning: {
+                main: '#ed1d24'
+            },
             text : {
-                primary: '#ffffff'
+                primary: '#ffffff',
             }
         },
     });
@@ -106,7 +109,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="primary">
+                                <TimelineDot color="warning">
                                     <Icon>
                                         <img src={SeriesIcon} height={25} width={25}/>
                                     </Icon>
@@ -126,7 +129,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="primary">
+                                <TimelineDot color="secondary">
                                     <Icon>
                                         <img src={MovieIcon} height={25} width={25}/>
                                     </Icon>
@@ -146,7 +149,7 @@ export default function CustomizedTimeline() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
-                                <TimelineDot color="primary">
+                                <TimelineDot variant='outlined'>
                                     <Icon>
                                         <img src={MovieIcon} height={25} width={25}/>
                                     </Icon>
