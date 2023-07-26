@@ -8,7 +8,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import MovieIcon from '../Icons/Logo_Film.png';
 import SeriesIcon from '../Icons/Logo_Serie.png'
-import OneShotIcon from '../Icons/Logo_OneShot.png'
+import OneShotIcon from '../Icons/Logo_OneShot_schwarz.png'
 import Typography from '@mui/material/Typography';
 import {Box, createTheme, Icon, Paper, ThemeProvider} from '@mui/material';
 import {timelineOppositeContentClasses} from "@mui/lab";
