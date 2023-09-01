@@ -36,7 +36,7 @@ export default function CustomizedTimeline() {
         <ThemeProvider theme={theme}>
 
             <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 1}}>
-                <Paper elevation={5} sx={{justifyContent: "center", opacity: 0.7, backgroundColor: 'black', overflow: 'auto', height: '65vh'}}>
+                <Paper elevation={5} sx={{justifyContent: "center", opacity: 0.7, backgroundColor: 'black', overflow: 'auto', height: '55vh'}}>
                     <Timeline
                         sx={{
                             [`& .${timelineOppositeContentClasses.root}`]: {
