@@ -7,7 +7,9 @@ main {
     justify-content: flex-start;
     font-size: calc(10px + 2vmin);
     color: white;
-    height: 100vh;
+    height: 100%;
+    position: fixed;
+    width: 100%;
 }
 
 .page {
