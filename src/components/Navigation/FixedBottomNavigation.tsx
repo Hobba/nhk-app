@@ -65,7 +65,7 @@ export default function FixedBottomNavigation() {
     }, [value]);
 
     return (
-        <Box sx={{pb: 7}} ref={ref}>
+        <Box ref={ref}>
             <CssBaseline/>
             <ThemeProvider theme={theme}>
                 <Paper
