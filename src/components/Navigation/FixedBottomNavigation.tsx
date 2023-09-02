@@ -69,7 +69,7 @@ export default function FixedBottomNavigation() {
             <CssBaseline/>
             <ThemeProvider theme={theme}>
                 <Paper
-                    sx={{position: 'fixed', bottom: 0, left: 0, right: 0, background: 'rgba(80, 19, 157, 0.7)'}}
+                    sx={{position: 'fixed', bottom: 0, left: 0, right: 0, background: 'rgba(80, 19, 157, 0.7)', zIndex: 10}}
                     elevation={3}>
                     <BottomNavigation
                         showLabels

@@ -6,6 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import CoverEpisode67 from '../Images/cover_episode67.jpeg';
 import CoverEpisode68 from '../Images/cover_episode68.jpeg';
 import CoverEpisode69 from '../Images/cover_episode69.jpeg';
+import Typography from "@mui/material/Typography";
+import './CustomImageList.css';
 
 
 function srcset(image: string, width: number, height: number) {
@@ -20,9 +22,10 @@ export default function CustomImageList() {
         <ImageList
             cols={1}
             sx={{
-                width: '75%',
-                height: '60%',
+                width: '95%',
+                paddingBottom: '60px',
                 transform: 'translateZ(0)',
+                zIndex: 1,
             }}
         >
             {itemData.map((item) => {
@@ -55,7 +58,11 @@ export default function CustomImageList() {
                             actionPosition="left"
                         />
                         <ImageListItemBar
-                            subtitle={<span>{item.description}</span>}
+                            subtitle={
+                                <Typography className="customSubtitle">
+                                    {item.description}
+                                </Typography>
+                            }
                             position="below"
                         />
                     </ImageListItem>
