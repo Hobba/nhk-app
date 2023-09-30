@@ -10,19 +10,22 @@ import {Icon} from "@mui/material";
 import {MediaType} from "./MediaType";
 import SeriesIcon from "../Icons/Logo_Serie.png";
 import MovieIcon from "../Icons/Logo_Film.png";
-import OneShotIcon from '../Icons/Logo_OneShot_schwarz.png'
+import OneShotIcon from '../Icons/Logo_OneShot_schwarz.png';
+import AltRouteIcon from '@mui/icons-material/AltRoute';
 
 interface MarvelTimelineItemProps {
     year: string;
     title: string;
     episode: string;
     mediaType: MediaType;
+    isAlternateTimeline: Boolean;
 }
 function MarvelTimelineItem(props: MarvelTimelineItemProps) {
     const { year } = props;
     const { title } = props;
     const { episode } = props;
     const { mediaType } = props;
+    const { isAlternateTimeline } = props;
 
     let icon: string;
     let color: any;
@@ -48,11 +51,15 @@ function MarvelTimelineItem(props: MarvelTimelineItemProps) {
         nhkEpisodeText = `NHK Folge ${episode}`
         variant = "filled"
     }
+    let alternativeTimelineText;
+    if (isAlternateTimeline){
+        alternativeTimelineText = <AltRouteIcon fontSize="small"></AltRouteIcon>
+    }
 
     return (
         <TimelineItem>
             <TimelineOppositeContent sx={{m: 'auto 0', fontWeight: 'bold'}} align="right" variant="h6" color="text.primary">
-                {year}
+                {year} {alternativeTimelineText}
             </TimelineOppositeContent>
             <TimelineSeparator>
                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>

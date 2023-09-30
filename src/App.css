@@ -40,4 +40,12 @@ main {
     margin-bottom: 5px;
 }
 
+.legend {
+    font-size: calc(4px + 2vmin);
+}
+
+.extra-icon {
+    margin-right: 10px;
+}
+
 
