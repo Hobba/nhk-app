@@ -44,8 +44,43 @@ main {
     font-size: calc(4px + 2vmin);
 }
 
-.extra-icon {
+.series-text {
     margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+
+.movie-text {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.oneshot-text {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+.alt-timeline-text {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
 }
 
 
