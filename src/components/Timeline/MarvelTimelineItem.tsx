@@ -10,7 +10,8 @@ import {Icon} from "@mui/material";
 import {MediaType} from "./MediaType";
 import SeriesIcon from "../Icons/Logo_Serie.png";
 import MovieIcon from "../Icons/Logo_Film.png";
-import OneShotIcon from '../Icons/Logo_OneShot_schwarz.png';
+import OneShotIconSchwarz from '../Icons/Logo_OneShot_schwarz.png';
+import OneShotIcon from '../Icons/Logo_OneShot.png';
 import AltRouteIcon from '@mui/icons-material/AltRoute';
 
 interface MarvelTimelineItemProps {
@@ -40,7 +41,12 @@ function MarvelTimelineItem(props: MarvelTimelineItemProps) {
             color = "primary";
             break;
         case MediaType.OneShot:
-            icon = OneShotIcon;
+            icon = OneShotIconSchwarz;
+
+            if (episode == "") {
+                icon = OneShotIcon
+            }
+
             color = "secondary";
             break;
     }

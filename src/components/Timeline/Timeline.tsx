@@ -37,14 +37,18 @@ export default function CustomizedTimeline() {
                         }}>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 7, Folge 1-12)" year="1930 - 1980" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Captain America: The First Avenger" year="1942 - 1945" mediaType={MediaType.Movie} episode="25 & 32" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 1)" year="1943 - 1945" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Agent Carter („One-Shot“)" year="1944" mediaType={MediaType.OneShot} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agent Carter (Staffel 1)" year="1946" mediaType={MediaType.Series} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agent Carter (Staffel 2)" year="1947" mediaType={MediaType.Series} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Captain Marvel" year="1995" mediaType={MediaType.Movie} episode="28 & 32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Iron Man" year="2010" mediaType={MediaType.Movie} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 6)" year="2010" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Der unglaubliche Hulk" year="2011" mediaType={MediaType.Movie} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Iron Man 2" year="2011" mediaType={MediaType.Movie} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="The Consultant" year="2010" mediaType={MediaType.OneShot} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 7)" year="2011" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 3)" year="2011" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="A Funny Thing Happened on the Way to Thor’s Hammer" year="2011" mediaType={MediaType.OneShot} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Thor" year="2011" mediaType={MediaType.Movie} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel's The Avengers" year="2012" mediaType={MediaType.Movie} episode="32" isAlternateTimeline={false}></MarvelTimelineItem>
@@ -57,11 +61,14 @@ export default function CustomizedTimeline() {
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 1, Folgen 8-15)" year="2014" mediaType={MediaType.Series} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="The Return of the First Avenger" year="2014" mediaType={MediaType.Movie} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 1, Folgen 16-22)" year="2014" mediaType={MediaType.Series} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 2)" year="2014" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Guardians of the Galaxy" year="2014" mediaType={MediaType.Movie} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Ich bin Groot" year="2014" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 2, Folgen 1-19)" year="2014" mediaType={MediaType.Series} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Guardians of the Galaxy Vol. 2" year="2014" mediaType={MediaType.Movie} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Daredevil (Staffel 1)" year="2015" mediaType={MediaType.Series} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Avengers: Age of Ultron" year="2015" mediaType={MediaType.Movie} episode="41" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 8)" year="2015" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 2, Folgen 20-22)" year="2015" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Ant-Man" year="2015" mediaType={MediaType.Movie} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Jessica Jones (Staffel 1)" year="2015" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
@@ -71,6 +78,7 @@ export default function CustomizedTimeline() {
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 3, Folgen 11-19)" year="2016" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Iron Fist (Staffel 1)" year="2016" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="The First Avenger: Civil War" year="2016" mediaType={MediaType.Movie} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Team Thor (Teil 1 & 2)" year="2016" mediaType={MediaType.OneShot} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 3, Folgen 20-22)" year="2016" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s The Defenders" year="2016" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 4, Folgen 1-8)" year="2016" mediaType={MediaType.Series} episode="51" isAlternateTimeline={false}></MarvelTimelineItem>
@@ -82,12 +90,14 @@ export default function CustomizedTimeline() {
                         <MarvelTimelineItem title="Marvel’s Inhumans" year="2016" mediaType={MediaType.Series} episode="59" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s The Punisher (Staffel 1)" year="2016" mediaType={MediaType.Series} episode="60" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Doctor Strange" year="2016 - 2017" mediaType={MediaType.Movie} episode="60" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 4)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 5, Folgen 1-10)" year="2017" mediaType={MediaType.Series} episode="60" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Runaways (Staffel 1)" year="2017" mediaType={MediaType.Series} episode="60" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Jessica Jones (Staffel 2)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 5, Folgen 11-18)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Cloak & Dagger (Staffel 1 & 2)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Thor: Tag der Entscheidung" year="2017" mediaType={MediaType.Movie} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Team Darryl" year="2017" mediaType={MediaType.OneShot} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Luke Cage (Staffel 2)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Iron Fist (Staffel 2)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Daredevil (Staffel 3)" year="2017" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
@@ -99,6 +109,7 @@ export default function CustomizedTimeline() {
                         <MarvelTimelineItem title="Ant-Man and the Wasp" year="2018" mediaType={MediaType.Movie} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 5, Folgen 19-21)" year="2018" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Avengers: Infinity War" year="2018" mediaType={MediaType.Movie} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
+                        <MarvelTimelineItem title="Marvel’s What If...? (Staffel 1, Folge 5)" year="2018" mediaType={MediaType.Series} episode="" isAlternateTimeline={true}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Agents of S.H.I.E.L.D. (Staffel 5, Folgen 22)" year="2018" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
                         <MarvelTimelineItem title="Marvel’s Runaways (Staffel 3, Folge 5-10)" year="2018" mediaType={MediaType.Series} episode="" isAlternateTimeline={false}></MarvelTimelineItem>
 
