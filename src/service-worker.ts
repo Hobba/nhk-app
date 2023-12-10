@@ -77,4 +77,21 @@ self.addEventListener('message', (event) => {
   }
 });
 
-// Any other custom service worker logic can go here.
+self.addEventListener('push', function(event) {
+    event.waitUntil(
+        self.registration.showNotification('Test Push', {
+            body: event.data?.text(),
+        })
+    );
+});
+
+self.addEventListener("sync", function (event) {
+    if (event.tag === "send-meal-review") {
+        event.waitUntil(
+            new Promise<void>((resolve) => {
+                console.log("Sync Nachricht ist angekommen!");
+            })
+        );
+    }
+});
+
