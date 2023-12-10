@@ -11,7 +11,7 @@ function App() {
         });
     }
 
-    Notification.requestPermission().then(function(permission) {});
+    // Notification.requestPermission().then(function(permission) {});
 
     return (
         <main>
