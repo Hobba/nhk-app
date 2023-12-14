@@ -87,11 +87,7 @@ self.addEventListener('push', function(event) {
 
 self.addEventListener("sync", function (event) {
     if (event.tag === "send-meal-review") {
-        event.waitUntil(
-            new Promise<void>((resolve) => {
-                console.log("Sync Nachricht ist angekommen!");
-            })
-        );
+        console.log("Sync Nachricht ist angekommen!");
     }
 });
 
