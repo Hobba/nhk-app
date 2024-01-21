@@ -1,18 +1,13 @@
 /// <reference lib="webworker" />
 /* eslint-disable no-restricted-globals */
 
-// This service worker can be customized!
-// See https://developers.google.com/web/tools/workbox/modules
-// for the list of available Workbox modules, or add any other
-// code you'd like.
-// You can also remove this file if you'd prefer not to use a
-// service worker, and the Workbox build step will be skipped.
-
 import { clientsClaim } from 'workbox-core';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate } from 'workbox-strategies';
+import { initializeApp } from "firebase/app";
+import { getMessaging, onBackgroundMessage } from "firebase/messaging/sw";
 
 declare const self: ServiceWorkerGlobalScope;
 
@@ -78,9 +73,13 @@ self.addEventListener('message', (event) => {
 });
 
 self.addEventListener('push', function(event) {
+    const data = event.data?.json()
+    const notificationTitle = data.notification.title
+    const notificationBody = data.notification.body
+
     event.waitUntil(
-        self.registration.showNotification('Test Push', {
-            body: event.data?.text(),
+        self.registration.showNotification(notificationTitle, {
+            body: notificationBody,
         })
     );
 });
@@ -91,3 +90,24 @@ self.addEventListener("sync", function (event) {
     }
 });
 
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
+};
+
+initializeApp(firebaseConfig);
+
+const messaging = getMessaging();
+
+onBackgroundMessage(messaging, (payload) => {
+    const notificationTitle = payload.notification?.title ?? 'An error occurred';
+    const notificationBody = payload.notification?.body
+
+    self.registration.showNotification(notificationTitle, {
+        body: notificationBody,
+    })
+});
