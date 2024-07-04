@@ -43,7 +43,7 @@ function MarvelTimelineItem(props: MarvelTimelineItemProps) {
         case MediaType.OneShot:
             icon = OneShotIconSchwarz;
 
-            if (episode == "") {
+            if (episode === "") {
                 icon = OneShotIcon
             }
 
@@ -53,7 +53,7 @@ function MarvelTimelineItem(props: MarvelTimelineItemProps) {
 
     let nhkEpisodeText = "";
     let variant : any = "outlined"
-    if (episode != "") {
+    if (episode !== "") {
         nhkEpisodeText = `NHK Folge ${episode}`
         variant = "filled"
     }

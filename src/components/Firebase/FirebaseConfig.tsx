@@ -35,7 +35,7 @@ export const getOrRegisterServiceWorker = async () => {
 
 const getFirebaseToken = async () => {
     try {
-        const messagingResolve = await messaging;
+        const messagingResolve = messaging;
         if (messagingResolve) {
             return getOrRegisterServiceWorker().then((serviceWorkerRegistration) => {
                 return Promise.resolve(

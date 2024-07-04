@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button} from "@mui/material";
+import {handleGetFirebaseToken} from "../../components/Firebase/FirebaseConfig";
 
 const AboutUs = () => {
     return (
@@ -23,16 +24,21 @@ const sendSyncMessage = () => {
     }
 };
 
-const sendPushNotification = () => {
-    const title = 'Notification aus dem Code';
-    const options = {
-        body: 'Dies ist eine Notification, die im Code definiert ist.',
-    };
-    navigator.serviceWorker.ready.then((registration) => {
-        registration.showNotification(title, options)
-            .then(r => console.log("Sent"))
-            .catch(e => console.log(e));
-    });
+const sendPushNotification = async () => {
+
+    let permission = await Notification.requestPermission();
+    if (permission === 'granted') {
+        const title = 'Notification aus dem Code';
+        const options = {
+            body: 'Dies ist eine Notification, die im Code definiert ist.',
+        };
+        navigator.serviceWorker.ready.then((registration) => {
+            registration.showNotification(title, options)
+                .then(r => console.log("Sent"))
+                .catch(e => console.log(e));
+        });
+        handleGetFirebaseToken()
+    }
 }
 
 export default AboutUs;

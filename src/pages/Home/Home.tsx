@@ -11,7 +11,7 @@ const Home = () => {
                     Herzlich Willkommen auf der Nerdhalbkugel
                 </h2>
             </div>
-            <img src={logo} className="home-logo"/>
+            <img src={logo} className="home-logo" alt="NHK Logo"/>
         </div>
     );
 };

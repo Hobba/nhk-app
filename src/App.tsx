@@ -10,7 +10,7 @@ function App() {
         if (
             window.Notification?.permission === "granted"
         ) {
-            handleGetFirebaseToken();
+            // handleGetFirebaseToken();
         }
     }, []);
 
